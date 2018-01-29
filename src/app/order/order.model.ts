@@ -1,11 +1,13 @@
 class Order {
 
-    constructor(public endereco: string,
-              public numero: number,
-              public optionalAddress: string,
-              public paymentOption: string,
-              public orderItems: OrderItem[] = []){
-    }
+    constructor(
+        public endereco: string,
+        public numero: number,
+        public optionalAddress: string,
+        public paymentOption: string,
+        public orderItems: OrderItem[] = [],
+        public id?: string
+    ){}
 }
 
 class OrderItem {
